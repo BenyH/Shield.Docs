@@ -1,4 +1,3 @@
-============
 Ericom Shield® Deployment Guide
 Version 8.0.0
 ============

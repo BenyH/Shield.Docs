@@ -1,5 +1,4 @@
-Ericom Shield® Deployment Guide
-Version 8.0.0
+Deployment Guide
 ============
 
 What is Ericom Shield®?

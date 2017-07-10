@@ -8,6 +8,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   main.rst
    whatisericomshield.rst
    shieldarchitecture.rst
    headings.rst

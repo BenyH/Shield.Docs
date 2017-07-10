@@ -16,7 +16,7 @@ Ericom Shield is deployed on Linux-based containers. Each browsing session start
 
 Shield Architecture
 -------------------
-.. image:: ../images/Architecture_f1.png	
+.. image:: images/Architecture_f1.png	
 
 
 Ericom Shield Workflow

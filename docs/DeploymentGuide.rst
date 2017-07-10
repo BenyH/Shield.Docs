@@ -15,12 +15,15 @@ Ericom Shield can be used with any browsers and end point device. All that is re
 Ericom Shield is deployed on Linux-based containers. Each browsing session starts in its own dedicated container. All sessions are routed by the Ericom Shield Proxy server, ensuring optimal resource allocation and high availability.
 
 Shield Architecture
--------------------
-.. image:: images/Architecture_f1.png	
+^^^^^^^^^^^^^^^^^^^
+.. figure:: images/Architecture_f1.png	
+:scale: 50%
+:alt: Ericom Shield Architecture 
+:align: center
 
+figure 1: Ericom Shield Architecture
 
-Ericom Shield Workflow
------------------------
+"""
 
 A user navigates to a desired web page by entering a URL address in the browser address bar.
 

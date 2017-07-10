@@ -7,11 +7,10 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   :glob:
 
    whatisericomshield.rst
    shieldarchitecture.rst
-   *
+   headings.rst
 
 
 

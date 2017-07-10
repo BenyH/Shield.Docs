@@ -17,11 +17,11 @@ Ericom Shield is deployed on Linux-based containers. Each browsing session start
 Shield Architecture
 ^^^^^^^^^^^^^^^^^^^
 .. figure:: images/Architecture_f1.png	
-:scale: 50%
-:alt: Ericom Shield Architecture 
-:align: center
+	:scale: 50%
+	:alt: Ericom Shield Architecture 
+	:align: center
 
-figure 1: Ericom Shield Architecture
+	*figure 1: Ericom Shield Architecture*
 
 """
 
@@ -37,6 +37,14 @@ The Shield Browser allows the user a seamless browsing experience, including all
 
 When downloading a file, the downloaded file is first sent to the Content Disarm and Reconstruct (CDR) engine, which is designed to deconstruct the file and remove any content that can cause potential harm (both known and unknown threats). Once the file sanitization is complete, the sanitized file is sent to the user.
 
+"""
+
+.. sidebar:: Sidebar Title
+   :subtitle: Optional Sidebar Subtitle
+
+   Subsequent indented lines comprise
+   the body of the sidebar, and are
+   interpreted as body elements.
 
 
 

@@ -1,8 +1,10 @@
+################
 Deployment Guide
-============
+################
 
+***********************
 What is Ericom Shield®?
------------------------
+***********************
 
 Ericom Shield is a remote virtual browser solution. The actual browsing takes place in a secure, isolated container that has no access to the Local Area Network. The Ericom Shield deployment can be on premise in the DMZ or in the Cloud. Ericom Shield is managed via a web-based administration console.
 
@@ -14,8 +16,9 @@ Ericom Shield can be used with any browsers and end point device. All that is re
 
 Ericom Shield is deployed on Linux-based containers. Each browsing session starts in its own dedicated container. All sessions are routed by the Ericom Shield Proxy server, ensuring optimal resource allocation and high availability.
 
+*******************
 Shield Architecture
-^^^^^^^^^^^^^^^^^^^
+*******************
 .. figure:: images/Architecture_f1.png	
 	:scale: 75%
 	:alt: Ericom Shield Architecture 
@@ -37,31 +40,128 @@ The Shield Browser allows the user a seamless browsing experience, including all
 
 When downloading a file, the downloaded file is first sent to the Content Disarm and Reconstruct (CDR) engine, which is designed to deconstruct the file and remove any content that can cause potential harm (both known and unknown threats). Once the file sanitization is complete, the sanitized file is sent to the user.
 
-.. topic:: Topic Title
+************
+Key Features
+************
 
-    Subsequent indented lines comprise
-    the body of the topic, and are
-    interpreted as body elements.
-	
+Ericom Shield has the following key features:
 
-.. sidebar:: Sidebar Title
-   :subtitle: Optional Sidebar Subtitle
+* Enables users to browse the internet safely and securely while isolating the users’ machine and the internal network from threats of malware and ransomware.
 
-   Subsequent indented lines comprise
-   the body of the sidebar, and are
-   interpreted as body elements.
+* Seamless user experience with zero installation on the end point devices – users benefit from the same experience as a non-protected browser, but without the risks.
+
+* Rich web based administration console, supported by all browsers. The Admin interface does not require any high maintenance plug-ins or installers.
+
+* Includes a policy engine to allow Administrators to easily manage which sites users can access, download files, store cookies etc.
 
 
-.. code:: python
 
-  def my_function():
-      "just a test"
-      print 8/2
-	  
-	  
-	  
-   
-Ericom Shield Update...
------------------------
+******************
+INSTALLATION GUIDE
+******************
 
-blah blah....
+
+Requirements
+============
+
+Software Requirements
+---------------------
+
+Ericom Shield requires Linux Ubuntu 16.04 and above.
+
+Hardware Requirements
+---------------------
+
+Minimum hardware specifications are 64GB memory, 8 core processors and 40GB disk space per shield server.
+
+Note
+
+A higher spec machine will host more virtual containers and therefore more browser sessions.  For example 50 cores and 140GB would support approx. 350 virtual containers.
+
+
+
+Evaluation
+----------
+
+The evaluation installation method uses an OVF Virtual Appliance image to allow for speedy deployment. This is described fully in the “Ericom Shield Evaluation Guide”.
+
+Production
+----------
+
+For an Ericom Shield production system, you can install using either a Vagrant file or Installation script. It’s recommended to use the Installation script (detailed below).
+
+All deployment options install a dedicated service that first installs Ericom Shield on the machine from scratch. Once done, the service can be used to stop and restart the containers. In addition, Ericom Shield includes an Auto-
+
+Update feature to ensure it is always up to date with the latest release. The auto update feature checks for updates each time it is started. 
+
+
+Installers
+==========
+
+Virtual Appliance
+-----------------
+
+Prerequisites
+^^^^^^^^^^^^^
+
+VirtualBox on Windows/Linux:
+
+Linux: open a terminal and run:: 
+
+$ apt install virtualbox · Windows: https://www.virtualbox.org/wiki/Downloads
+
+Vagrant File
+------------
+
+Prerequisites
+^^^^^^^^^^^^^
+
+The first step is to install Vagrant and VirtualBox on Ubuntu, as detailed above, please ensure that your Ubuntu server is 16.04 or above.
+
+To install, open a terminal window or SSH to the Linux machine and run::
+
+	$ apt install vagrant
+
+	$ apt install virtualbox
+
+
+Deployment
+""""""""""
+
+Create a folder with the name: “Vagrant”. Change to this folder by typing “cd Vagrant” and then run the following commands.::
+
+	$ “wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/Vagrantfile”
+
+	$ chmod +x Vagrantfile
+
+	$ vagrant up
+
+..note:: The “vagrant up” command may take a while to complete, especially if this is the first time you have run this command on the machine.
+
+After the process is successfully completed, the user is displayed with the following data: the VM’s IP and several ports of interest.
+
+
+Installation Script
+-------------------
+
+Prerequisites
+^^^^^^^^^^^^^
+
+Ubuntu 16.04 - to install, follow these instructions: https://www.ubuntu.com/download/desktop/install-ubuntu-desktop
+
+Deployment
+----------
+
+Open a terminal window or connect to the Linux machine using SSH, create a new temporary folder and go to this folder.
+
+Run the following commands.::
+
+	$ wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/ericomshield-setup.sh
+
+	$ sudo chmod +x ericomshield-setup.sh
+
+	$ sudo ./ericomshield-setup.sh
+
+The script may take some time to complete (approx. xx mins). At the end of the script you should see that the deployment is successful.
+
+Ericom Shield is installed in “/usr/local/ericomshield”.

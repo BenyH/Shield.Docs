@@ -146,7 +146,7 @@ Create a folder with the name: “Vagrant”. Change to this folder by typing �
 .. note:: The “vagrant up” command may take a while to complete, especially if this is the first time you have run this command on the machine.
 
 
-.. _VM_IP:  
+
 After the process is successfully completed, the user is displayed with the following data: the VM’s IP and several ports of interest.
 
 
@@ -157,7 +157,7 @@ Installation Script
 Prerequisites
 =============
 
-Ubuntu 16.04 - to install, follow these instructions: https://www.ubuntu.com/download/desktop/install-ubuntu-desktop
+Ubuntu 16.04 - to install, follow the instructions .. _`here`: https://www.ubuntu.com/download/desktop/install-ubuntu-desktop
 
 Deployment
 ==========
@@ -246,11 +246,11 @@ Browsing HTTPS sites
 
 In order for Shield to handle HTTPS URLs, the following certificates need to be imported into the client machine (Local Computer). This can be done via Group Policy or manually. 
  
-Download the certificates: 
-Save the following certificates locally: 
 
-	:download: `ca.cert.crt <downloads/ca.cert.crt>`
-	:download: `intermediate.crt <downloads/intermediate.crt>`
+ Save the following certificates locally: 
+
+	:download: `ca.cert.crt <downloads/ca.cert.crt>`.
+	:download: `intermediate.crt <downloads/intermediate.crt>`.
   
  
 **Deploy certificates using Group Policy:**
@@ -268,9 +268,7 @@ To deploy certificates using Group Policy, follow the instructions detailed belo
 
 	
 	
-	.. note:: More details can be found in the TechNet Article `a link` _.
-
-.. _a link:	https://technet.microsoft.com/en-us/library/cc770315%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396
+	.. note:: More details can be found in this .. _`TechNet Article`:https://technet.microsoft.com/en-us/library/cc770315%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396
 
 
 **Manual Installation**
@@ -304,8 +302,7 @@ Run Firefox, go to **Tools | Options | Advanced | Certificates | View Certificat
 
 **Mac OSX Configuration:**
 
-For instructions on how to import certificates in Mac OS, please visit: `a link`_.
- .. _a link: https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
+For instructions on how to import certificates in Mac OS, click .. _`here`: https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
 
 You may have different screens if your Mac is running a different OSX version than the one shown, in such case check with your documentation on the correct method for installing certificates.
 
@@ -330,9 +327,9 @@ AWAITING CONTENT FOR HERE>>>>>
 Admin Console
 *************
 
-To launch the web based Administration Console go to http://<ShieldServerIPaddress>:8181
+To launch the web based Administration Console go to "http://<ShieldServerIPaddress>:8181"
 
-Where the ``<Shield Server IP address>`` is the one noted in see :ref: `VM_IP`.
+Where the ``<Shield Server IP address>`` is the one noted in see `Deployment`_.
 
 
 

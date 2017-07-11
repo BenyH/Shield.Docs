@@ -71,7 +71,8 @@ Hardware Requirements
 
 Minimum hardware specifications are 64GB memory, 8 core processors and 40GB disk space per shield server.
 
-  ..note:: A higher spec machine will host more virtual containers and therefore more browser sessions.  For example 50 cores and 140GB would support approx. 350 virtual containers.
+
+  .. note:: A higher spec machine will host more virtual containers and therefore more browser sessions.  For example 50 cores and 140GB would support approx. 350 virtual containers.
 
 
 
@@ -88,6 +89,7 @@ For an Ericom Shield production system, you can install using either a Vagrant f
 All deployment options install a dedicated service that first installs Ericom Shield on the machine from scratch. Once done, the service can be used to stop and restart the containers. In addition, Ericom Shield includes an Auto-
 
 Update feature to ensure it is always up to date with the latest release. The auto update feature checks for updates each time it is started. 
+
 
 **********
 Installers
@@ -132,6 +134,7 @@ Create a folder with the name: “Vagrant”. Change to this folder by typing �
 	$ chmod +x Vagrantfile
 
 	$ vagrant up
+	
 
 	.. note:: The “vagrant up” command may take a while to complete, especially if this is the first time you have run this command on the machine.
 
@@ -191,9 +194,11 @@ Shield Proxy
 
 Select your browser of choice and define the Proxy Settings to use the Shield Client IP address (as noted from section 2.2) and 3128 port. These settings can be changed manually as described in the links below, or via Group Policy.
 
-Firefox: http://www.wikihow.com/Enter-Proxy-Settings-in-Firefox
+Firefox: 
+http://www.wikihow.com/Enter-Proxy-Settings-in-Firefox
 
-Chrome and IE: done via the Local Internet Properties: https://customers.trustedproxies.com/knowledgebase.php?action=displayarticle&id=10
+Chrome and IE: 
+done via the Local Internet Properties: https://customers.trustedproxies.com/knowledgebase.php?action=displayarticle&id=10
 
 
 Using the EricomShield Service
@@ -209,7 +214,7 @@ The following actions are available using the service:
 * version: shows the service version
 * restart: stops and restarts the service
 
-The required syntax is sudo service ericomshield <command> e.g.
+The required syntax is sudo service ericomshield <command> e.g.::
 
 	$ sudo service ericomshield status
 
@@ -226,6 +231,7 @@ You should see the following to show that the system is running.
 Browsing HTTPS sites 
 ====================
 
+
 **Windows** 
 
 In order for Shield to handle HTTPS URLs, the following certificates need to be imported into the client machine (Local Computer). This can be done via Group Policy or manually. 
@@ -233,10 +239,12 @@ In order for Shield to handle HTTPS URLs, the following certificates need to be 
 Download the certificates: 
 Save the following certificates locally: 
 
-ca.cert.pem  https://raw.githubusercontent.com/ErezPasternak/Shield/master/Certs/ca.cert.pem
-intermediate-chain.cert.pem		https://raw.githubusercontent.com/ErezPasternak/Shield/master/Certs/intermediate-chain.cert.pem
+ca.cert.pem  
+https://raw.githubusercontent.com/ErezPasternak/Shield/master/Certs/ca.cert.pem
 
-To save – right click on the text and select “Save as”. 
+intermediate-chain.cert.pem		
+https://raw.githubusercontent.com/ErezPasternak/Shield/master/Certs/intermediate-chain.cert.pem
+
  
  
 **Deploy certificates using Group Policy:**
@@ -247,10 +255,48 @@ To deploy certificates using Group Policy, follow the instructions detailed belo
 2. Find an existing or create a new GPO to contain the certificate settings. Ensure that the GPO is associated with the domain, site, or organizational unit whose users you want affected by the policy. 
 3. Right-click the GPO, and then select *Edit*. 
 4. Group Policy Management Editor opens, and displays the current contents of the policy object. 
-5. In the navigation pane, open *Computer Configuration\Windows Settings\Security Settings\Public Key Policies\Trusted Publishers*. 
+5. In the navigation pane, open *Computer Configuration\|Windows Settings\|Security Settings\|Public Key Policies\|Trusted Publishers*. 
 6. Click the *Action* menu, and then click *Import*. 
 7. Follow the instructions in the *Certificate Import Wizard* to find and import the certificate. 
 8. If the certificate is self-signed, and cannot be traced back to a certificate that is in the *Trusted Root Certification Authorities* certificate store, then you must also copy the certificate to that store. In the navigation pane, click Trusted Root Certification Authorities, and then repeat steps 5 and 6 to install a copy of the certificate to that store. 
 
+	
+	
 	.. note:: More details can be found in the TechNet Article here…  https://technet.microsoft.com/en-us/library/cc770315%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396
+
+
+**Manual Installation**
+Go to ''Manage Computer Certificates'', and select ''Trusted Root Certification Authorities''
+
+.. figure:: images/Certificateslocalcomputer.png
+	:scale: 75%
+	:alt: Certificate Store
+	:align: center
+
+	*figure 1: Certificate (local computer)*
+
+Right click on “Certificates” in Trusted Root… and select **All Tasks | Import**
+
+.. figure:: images/Certificateslocalcomputer.png
+	:scale: 75%
+	:alt: Import Certificates
+	:align: center
+
+	*figure 1: Import Certificates*
+
+
+The **Certificate Import Wizard** opens, click **Next** and browse to the folder containing the saved certificates. Select one of them and click **next**, **next** and **Finish** (accepting the defaults). Repeat the process with the second certificate. 
+
+Some browsers, e.g. Firefox, require importing the certificates into the browser itself.
+
+To import the certificates into Firefox, follow these steps: 
+Run Firefox, go to **Tools | Options | Advanced | Certificates | View Certificates**. Under the Authorities tab, click **Import**... add the certificate as a trusted authority.  Repeat for the second certificate as well.
+
+
+**Mac OSX Configuration:**
+
+For instructions on how to import certificates in Mac OS, please visit here...
+https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
+
+You may have different screens if your Mac is running a different OSX version than the one shown, in such case check with your documentation on the correct method for installing certificates.
 

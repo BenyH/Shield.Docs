@@ -57,7 +57,7 @@ Ericom Shield has the following key features:
 
 
 ******************
-INSTALLATION GUIDE
+Installation
 ******************
 
 

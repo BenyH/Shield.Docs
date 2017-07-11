@@ -8,10 +8,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-	gettingstartedguide.rst
 	deploymentguide.rst
 	
-
 
 
 Indices and tables

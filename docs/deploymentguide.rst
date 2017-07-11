@@ -61,16 +61,13 @@ Installation
 ******************
 
 
-Requirements
-============
-
 Software Requirements
----------------------
+=====================
 
 Ericom Shield requires Linux Ubuntu 16.04 and above.
 
 Hardware Requirements
----------------------
+=====================
 
 Minimum hardware specifications are 64GB memory, 8 core processors and 40GB disk space per shield server.
 
@@ -81,12 +78,12 @@ A higher spec machine will host more virtual containers and therefore more brows
 
 
 Evaluation
-----------
+==========
 
 The evaluation installation method uses an OVF Virtual Appliance image to allow for speedy deployment. This is described fully in the “Ericom Shield Evaluation Guide”.
 
 Production
-----------
+==========
 
 For an Ericom Shield production system, you can install using either a Vagrant file or Installation script. It’s recommended to use the Installation script (detailed below).
 
@@ -94,15 +91,15 @@ All deployment options install a dedicated service that first installs Ericom Sh
 
 Update feature to ensure it is always up to date with the latest release. The auto update feature checks for updates each time it is started. 
 
-
+**********
 Installers
-==========
+**********
 
 Virtual Appliance
------------------
+=================
 
 Prerequisites
-^^^^^^^^^^^^^
+-------------
 
 VirtualBox on Windows/Linux:
 
@@ -111,10 +108,10 @@ Linux: open a terminal and run::
 $ apt install virtualbox · Windows: https://www.virtualbox.org/wiki/Downloads
 
 Vagrant File
-------------
+============
 
 Prerequisites
-^^^^^^^^^^^^^
+-------------
 
 The first step is to install Vagrant and VirtualBox on Ubuntu, as detailed above, please ensure that your Ubuntu server is 16.04 or above.
 
@@ -126,7 +123,7 @@ To install, open a terminal window or SSH to the Linux machine and run::
 
 
 Deployment
-""""""""""
+----------
 
 Create a folder with the name: “Vagrant”. Change to this folder by typing “cd Vagrant” and then run the following commands.::
 
@@ -136,16 +133,17 @@ Create a folder with the name: “Vagrant”. Change to this folder by typing �
 
 	$ vagrant up
 
-..note:: The “vagrant up” command may take a while to complete, especially if this is the first time you have run this command on the machine.
+	.. note:: The “vagrant up” command may take a while to complete, especially if this is the first time you have run this command on the machine.
 
 After the process is successfully completed, the user is displayed with the following data: the VM’s IP and several ports of interest.
 
 
+*******************
 Installation Script
--------------------
+*******************
 
 Prerequisites
-^^^^^^^^^^^^^
+=============
 
 Ubuntu 16.04 - to install, follow these instructions: https://www.ubuntu.com/download/desktop/install-ubuntu-desktop
 

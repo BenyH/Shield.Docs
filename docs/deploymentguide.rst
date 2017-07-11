@@ -93,9 +93,7 @@ Production
 
 For an Ericom Shield production system, you can install using either a Vagrant file or Installation script. It’s recommended to use the Installation script (detailed below).
 
-All deployment options install a dedicated service that first installs Ericom Shield on the machine from scratch. Once done, the service can be used to stop and restart the containers. In addition, Ericom Shield includes an Auto-
-
-Update feature to ensure it is always up to date with the latest release. The auto update feature checks for updates each time it is started. 
+All deployment options install a dedicated service that first installs Ericom Shield on the machine from scratch. Once done, the service can be used to stop and restart the containers. In addition, Ericom Shield includes an Auto-Update feature to ensure it is always up to date with the latest release. The auto update feature checks for updates each time it is started. 
 
 
 **********
@@ -144,7 +142,9 @@ Create a folder with the name: “Vagrant”. Change to this folder by typing �
 	
 
 	
-  .. note:: The “vagrant up” command may take a while to complete, especially if this is the first time you have run this command on the machine.
+
+.. note:: The “vagrant up” command may take a while to complete, especially if this is the first time you have run this command on the machine.
+
 
 .. _VM_IP:  
 After the process is successfully completed, the user is displayed with the following data: the VM’s IP and several ports of interest.
@@ -304,8 +304,8 @@ Run Firefox, go to **Tools | Options | Advanced | Certificates | View Certificat
 
 **Mac OSX Configuration:**
 
-For instructions on how to import certificates in Mac OS, please visit: `a link` _.
- .._a link: https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
+For instructions on how to import certificates in Mac OS, please visit: `a link`_.
+ .. _a link: https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
 
 You may have different screens if your Mac is running a different OSX version than the one shown, in such case check with your documentation on the correct method for installing certificates.
 
@@ -332,7 +332,7 @@ Admin Console
 
 To launch the web based Administration Console go to http://<ShieldServerIPaddress>:8181
 
-Where the ``<Shield Server IP address>`` is the one noted in see :ref:`VM_IP`.
+Where the ``<Shield Server IP address>`` is the one noted in see :ref: `VM_IP`.
 
 
 

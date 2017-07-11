@@ -268,7 +268,7 @@ To deploy certificates using Group Policy, follow the instructions detailed belo
 
 	
 	
-	.. note:: More details can be found in this .. _`TechNet Article`:https://technet.microsoft.com/en-us/library/cc770315%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396
+	.. note:: More details can be found in this `TechNet Article <https://technet.microsoft.com/en-us/library/cc770315%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396>`_ 
 
 
 **Manual Installation**
@@ -302,8 +302,7 @@ Run Firefox, go to **Tools | Options | Advanced | Certificates | View Certificat
 
 **Mac OSX Configuration:**
 
-For instructions on how to import certificates in Mac OS, click 
-	.. _`here`: https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
+For instructions on how to import certificates in Mac OS, click here... https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
 
 You may have different screens if your Mac is running a different OSX version than the one shown, in such case check with your documentation on the correct method for installing certificates.
 

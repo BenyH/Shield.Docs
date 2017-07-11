@@ -79,7 +79,7 @@ Minimum hardware specifications are 64GB memory, 8 core processors and 40GB disk
 
 
 
-  .. note:: A higher spec machine will host more virtual containers and therefore more browser sessions.  For example 50 cores and 140GB would support approx. 350 virtual containers.
+.. note:: A higher spec machine will host more virtual containers and therefore more browser sessions.  For example 50 cores and 140GB would support approx. 350 virtual containers.
 
 
 
@@ -132,7 +132,7 @@ To install, open a terminal window or SSH to the Linux machine and run::
 Deployment
 ----------
 
-Create a folder with the name: “Vagrant”. Change to this folder by typing “cd Vagrant” and then run the following commands.::
+Create a folder with the name: ``Vagrant``. Change to this folder by typing ``cd Vagrant`` and then run the following commands.::
 
 	$ “wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/Vagrantfile”
 
@@ -157,7 +157,7 @@ Installation Script
 Prerequisites
 =============
 
-Ubuntu 16.04 - to install, follow the instructions .. _`here`: https://www.ubuntu.com/download/desktop/install-ubuntu-desktop
+Ubuntu 16.04 - to install, follow the instructions `here` <https://www.ubuntu.com/download/desktop/install-ubuntu-desktop>`_
 
 Deployment
 ==========
@@ -174,7 +174,7 @@ Run the following commands.::
 
 The script may take some time to complete (approx. xx mins). At the end of the script you should see that the deployment is successful.
 
-Ericom Shield is installed in “/usr/local/ericomshield”.
+Ericom Shield is installed in ``/usr/local/ericomshield``.
 
 
 
@@ -207,8 +207,8 @@ Select your browser of choice and define the Proxy Settings to use the Shield Cl
 Firefox: 
 http://www.wikihow.com/Enter-Proxy-Settings-in-Firefox
 
-Chrome and IE: 
-done via the Local Internet Properties: https://customers.trustedproxies.com/knowledgebase.php?action=displayarticle&id=10
+Chrome and IE: (*done via the Local Internet Properties*):
+https://customers.trustedproxies.com/knowledgebase.php?action=displayarticle&id=10
 
 
 Using the EricomShield Service
@@ -235,7 +235,7 @@ You should see the following to show that the system is running.
 	:alt: Ericom Shield status
 	:align: center
 
-	*figure 1: Ericom Shield Status*
+	*figure 2: Ericom Shield Status*
 
 
 Browsing HTTPS sites 
@@ -268,7 +268,7 @@ To deploy certificates using Group Policy, follow the instructions detailed belo
 
 	
 	
-	.. note:: More details can be found in this `TechNet Article <https://technet.microsoft.com/en-us/library/cc770315%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396>`_ 
+.. note:: More details can be found in this `TechNet Article <https://technet.microsoft.com/en-us/library/cc770315%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396>`_ 
 
 
 **Manual Installation**
@@ -280,7 +280,7 @@ Go to **Manage Computer Certificates**, and select **Trusted Root Certification 
 	:alt: Certificate Store
 	:align: center
 
-	*figure 1: Certificate (local computer)*
+	*figure 3: Certificate (local computer)*
 
 Right click on **Certificates** in Trusted Root… and select **All Tasks | Import**
 
@@ -289,7 +289,7 @@ Right click on **Certificates** in Trusted Root… and select **All Tasks | Impo
 	:alt: Import Certificates
 	:align: center
 
-	*figure 1: Import Certificates*
+	*figure 4: Import Certificates*
 
 
 The **Certificate Import Wizard** opens, click **Next** and browse to the folder containing the saved certificates. Select one of them and click **next**, **next** and **Finish** (accepting the defaults). Repeat the process with the second certificate. 
@@ -302,7 +302,7 @@ Run Firefox, go to **Tools | Options | Advanced | Certificates | View Certificat
 
 **Mac OSX Configuration:**
 
-For instructions on how to import certificates in Mac OS, click here... https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
+For instructions on how to import certificates in Mac OS, click `here <https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/>_
 
 You may have different screens if your Mac is running a different OSX version than the one shown, in such case check with your documentation on the correct method for installing certificates.
 
@@ -327,9 +327,161 @@ AWAITING CONTENT FOR HERE>>>>>
 Admin Console
 *************
 
-To launch the web based Administration Console go to "http://<ShieldServerIPaddress>:8181"
+To launch the web based Administration Console go to ``http://<ShieldServerIPaddress>:8181``
 
-Where the ``<Shield Server IP address>`` is the one noted in see `Deployment`_.
+Where the ``<Shield Server IP address>`` is the one noted in the deployment section earlier.
+
+.. figure:: images/adminuiloginscreen.png
+	:scale: 75%
+	:alt: Admin UI Login Screen
+	:align: center
+
+	*figure 5: Admin Console Login Screen*
+
+The web interface is optimized for 1440 pixel horizontal resolution.
+
+**Default credentials:**
+
+**Username:** admin
+**Password:** ericomshield
+
+
+Select the UI Language
+======================
+
+To change the user interface language of the Admin console, click on the context menu at the upper right corner to open the settings screen:
+
+.. figure:: images/settings.png
+	:scale: 75%
+	:alt: Settings
+	:align: center
+
+	*figure 6: Settings*
+	
+Select the Language option
+
+.. figure:: images/language.png
+	:scale: 75%
+	:alt: Language
+	:align: center
+
+	*figure 7: Language*
+		
+		
+Select the desired language from the list, log in to the system - the user interface will use the selected language.
+		
+
+Using the Administration Console
+================================
+
+The web based administration console is comprised of the following panels:
+
+Navigation Panel
+----------------
+
+.. figure:: images/Adminuinavigation.png
+	:scale: 75%
+	:alt: Admin Console Navigationavigation
+	:align: center
+
+	*figure 8: Admin Console Navigation*
+
+
+The navigation panel is located on the far left side of the console. It displays the configuration options available to the Administrator. 
+
+Main Panel
+==========
+ 
+.. figure:: images/Adminuimainpanel.png
+	:scale: 75%
+	:alt: Admin Console Main Panel
+	:align: center
+
+	*figure 9: Admin Console Main Panel*
+
+The main panel is located in the middle area of the console. It displays the high level information and configuration options related to the menu item selected. 
+
+
+Tooltips
+========
+
+
+Hovering the mouse over an icon in the main panel will display a tooltip message to assist with configuration.
+
+
+*********
+Dashboord
+*********
+
+TBD
+
+********
+Policies
+********
+
+In this section, policies can be defined system wide or for an individual URL.  
+
+The available actions are: ``Add New URL``, ``Delete” and ``Toggle View``.
+
+ 
+.. figure:: images/mainscreentoolbar.png
+	:scale: 75%
+	:alt: Admin Console Toolbar
+	:align: center
+
+	*figure 10: Admin Console Toolbar*
+	
+In addition, there is a search box, allowing the admin user to search for a certain URL.
+	
+
+Default Policy
+==============
+
+.. figure:: images/defaultpolicy.png
+	:scale: 75%
+	:alt: Default Policy
+	:align: center
+
+	*figure 11: Default Policy*
+	
+	
+The System Default policy is displayed in the dedicated row (in green) in the upper section of the Policies table.  You may need to use the “Toggle View” option in order to see it.
+
+To update an option within the default policy, click the dropdown list for the required option and set the required default value. 
+
+
+Configuring a Policy
+====================
+The following options can be controlled within a Policy, either at the system default level or for specific URLs defined within the Policy engine.
+
+..note:: A specified URL will take priority over the system default policy, except in cases where the override values have been used, see next section for more details on overriding a policy.
+
+**Sub-domain** – define whether the URL’s sub-domains are included or not::
+	Example: URL is defined as west.examle.com
+If this option is enabled, the user would also have access to east.example.com without having to explicitly add this to the URL section.
+
+
+**Download** – define if a file may be downloaded from the specified URL
+**Upload** - define if a file may be uploaded to the specific URL
+**Clipboard** – enable or disable the clipboard usage  
+**Cookies** – enable or disable the usage of cookies (bi-directionally)
+..note:: It’s important to note that globally blocking cookies will prevent most sites that use some form of authentication unusable.  This is because those sites will store an authentication cookie on your machine (usually encrypted).   
+In essence the main reason to block cookies is to prevent tracking cookies, this type of third party cookie allows other sites and so advertisers to read them, throwing up those annoying adds related to something you searched for last week.
+As blocking all cookies may cause issues with some sites needed by the organization, a policy of black and white lists can provide the best of both worlds.
+
+**Files** – define whether downloaded files are sanitized or not
+**Access** – define whether the URL is:
+
+1.	Shield - opened via Ericom Shield
+2.	White - opened without going through the Ericom Shield system
+3.	Black - cannot be opened at all.
+
+	
+	
+ 
+ 
+
+
 
 
 

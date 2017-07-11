@@ -16,9 +16,12 @@ Ericom Shield can be used with any browsers and end point device. All that is re
 
 Ericom Shield is deployed on Linux-based containers. Each browsing session starts in its own dedicated container. All sessions are routed by the Ericom Shield Proxy server, ensuring optimal resource allocation and high availability.
 
+
+
 *******************
 Shield Architecture
 *******************
+
 .. figure:: images/Architecture_f1.png	
 	:scale: 75%
 	:alt: Ericom Shield Architecture 
@@ -40,6 +43,8 @@ The Shield Browser allows the user a seamless browsing experience, including all
 
 When downloading a file, the downloaded file is first sent to the Content Disarm and Reconstruct (CDR) engine, which is designed to deconstruct the file and remove any content that can cause potential harm (both known and unknown threats). Once the file sanitization is complete, the sanitized file is sent to the user.
 
+
+
 ************
 Key Features
 ************
@@ -53,6 +58,7 @@ Ericom Shield has the following key features:
 * Rich web based administration console, supported by all browsers. The Admin interface does not require any high maintenance plug-ins or installers.
 
 * Includes a policy engine to allow Administrators to easily manage which sites users can access, download files, store cookies etc.
+
 
 
 
@@ -70,6 +76,7 @@ Hardware Requirements
 =====================
 
 Minimum hardware specifications are 64GB memory, 8 core processors and 40GB disk space per shield server.
+
 
 
   .. note:: A higher spec machine will host more virtual containers and therefore more browser sessions.  For example 50 cores and 140GB would support approx. 350 virtual containers.
@@ -136,8 +143,10 @@ Create a folder with the name: “Vagrant”. Change to this folder by typing �
 	$ vagrant up
 	
 
-	.. note:: The “vagrant up” command may take a while to complete, especially if this is the first time you have run this command on the machine.
+	
+  .. note:: The “vagrant up” command may take a while to complete, especially if this is the first time you have run this command on the machine.
 
+.. _VM_IP:  
 After the process is successfully completed, the user is displayed with the following data: the VM’s IP and several ports of interest.
 
 
@@ -166,6 +175,7 @@ Run the following commands.::
 The script may take some time to complete (approx. xx mins). At the end of the script you should see that the deployment is successful.
 
 Ericom Shield is installed in “/usr/local/ericomshield”.
+
 
 
 ***********************
@@ -208,11 +218,11 @@ The ericomshield service provides the ability to easily perform certain actions 
 
 The following actions are available using the service:
 
-* start: starts the service
-* stop: stops the service
-* status: shows the status of the service
-* version: shows the service version
-* restart: stops and restarts the service
+* **start**: starts the service
+* **stop**: stops the service
+* **status**: shows the status of the service
+* **version**: shows the service version
+* **restart**: stops and restarts the service
 
 The required syntax is sudo service ericomshield <command> e.g.::
 
@@ -239,13 +249,9 @@ In order for Shield to handle HTTPS URLs, the following certificates need to be 
 Download the certificates: 
 Save the following certificates locally: 
 
-ca.cert.pem  
-https://raw.githubusercontent.com/ErezPasternak/Shield/master/Certs/ca.cert.pem
-
-intermediate-chain.cert.pem		
-https://raw.githubusercontent.com/ErezPasternak/Shield/master/Certs/intermediate-chain.cert.pem
-
- 
+	:download: `ca.cert.crt <downloads/ca.cert.crt>`
+	:download: `intermediate.crt <downloads/intermediate.crt>`
+  
  
 **Deploy certificates using Group Policy:**
 
@@ -253,20 +259,23 @@ To deploy certificates using Group Policy, follow the instructions detailed belo
  
 1. Open Group Policy Management Console. 
 2. Find an existing or create a new GPO to contain the certificate settings. Ensure that the GPO is associated with the domain, site, or organizational unit whose users you want affected by the policy. 
-3. Right-click the GPO, and then select *Edit*. 
+3. Right-click the GPO, and then select **Edit**. 
 4. Group Policy Management Editor opens, and displays the current contents of the policy object. 
-5. In the navigation pane, open *Computer Configuration\|Windows Settings\|Security Settings\|Public Key Policies\|Trusted Publishers*. 
-6. Click the *Action* menu, and then click *Import*. 
-7. Follow the instructions in the *Certificate Import Wizard* to find and import the certificate. 
-8. If the certificate is self-signed, and cannot be traced back to a certificate that is in the *Trusted Root Certification Authorities* certificate store, then you must also copy the certificate to that store. In the navigation pane, click Trusted Root Certification Authorities, and then repeat steps 5 and 6 to install a copy of the certificate to that store. 
+5. In the navigation pane, open **Computer Configuration | Windows Settings | Security Settings | Public Key Policies | Trusted Publishers**. 
+6. Click the **Action** menu, and then click **Import**. 
+7. Follow the instructions in the **Certificate Import Wizard** to find and import the certificate. 
+8. If the certificate is self-signed, and cannot be traced back to a certificate that is in the **Trusted Root Certification Authorities** certificate store, then you must also copy the certificate to that store. In the navigation pane, click **Trusted Root Certification Authorities**, and then repeat steps 5 and 6 to install a copy of the certificate to that store. 
 
 	
 	
-	.. note:: More details can be found in the TechNet Article here…  https://technet.microsoft.com/en-us/library/cc770315%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396
+	.. note:: More details can be found in the TechNet Article `a link` _.
+
+.. _a link:	https://technet.microsoft.com/en-us/library/cc770315%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396
 
 
 **Manual Installation**
-Go to ''Manage Computer Certificates'', and select ''Trusted Root Certification Authorities''
+
+Go to **Manage Computer Certificates**, and select **Trusted Root Certification Authorities**
 
 .. figure:: images/Certificateslocalcomputer.png
 	:scale: 75%
@@ -275,7 +284,7 @@ Go to ''Manage Computer Certificates'', and select ''Trusted Root Certification 
 
 	*figure 1: Certificate (local computer)*
 
-Right click on “Certificates” in Trusted Root… and select **All Tasks | Import**
+Right click on **Certificates** in Trusted Root… and select **All Tasks | Import**
 
 .. figure:: images/Certificateslocalcomputer.png
 	:scale: 75%
@@ -295,8 +304,38 @@ Run Firefox, go to **Tools | Options | Advanced | Certificates | View Certificat
 
 **Mac OSX Configuration:**
 
-For instructions on how to import certificates in Mac OS, please visit here...
-https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
+For instructions on how to import certificates in Mac OS, please visit: `a link` _.
+ .._a link: https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/   
 
 You may have different screens if your Mac is running a different OSX version than the one shown, in such case check with your documentation on the correct method for installing certificates.
+
+
+******************
+OPSWAT Integration
+****************** 
+
+Ericom Shield includes a third-party scanning engine as part of the Internet Content Adaptation Protocol (ICAP) Server.  This scanning engine integrated into the ICAP Server using CDR which helps secure your web traffic and extend the protection of your organisation against advanced threats by scanning and sanitizing any files that pass through it. 
+CDR stands for “Content Disarm and Reconstruct”, this engine is designed to deconstruct the file and remove any content that can cause potential harm (both known and unknown threats).  Once the file sanitization is complete, the sanitized file is sent to the user.
+It should be noted that any scanning engine available today cannot provide 100% protection from malware.  In essence the scanning engine reduces the risk, and therefore any protection policy should include a combination or black and white listed sites and CDR to obtain a higher level of overall protection.
+
+
+*****************************************
+Clustering Multiple Ericom Shield Servers
+*****************************************
+
+AWAITING CONTENT FOR HERE>>>>>
+
+
+*************
+Admin Console
+*************
+
+To launch the web based Administration Console go to http://<ShieldServerIPaddress>:8181
+
+Where the ``<Shield Server IP address>`` is the one noted in see :ref:`VM_IP`.
+
+
+
+
+
 

@@ -479,11 +479,139 @@ As blocking all cookies may cause issues with some sites needed by the organizat
 	3.	Black - cannot be opened at all.
 
 	
+Override Values
+===============
+
+In the case where an organization has many pre-defined URLs, there may be a situation where the system Administrator wishes to override ALL policies either permanently or on a short term basis.  For example, a blanket ban on file downloads, this may be due to recent security events or a change in company policy.  
+Instead of having to open each policy and amend the required setting, it’s possible to use the override option in the default policy, and this will then override any setting which has been set in an individual policy.
 	
  
+.. figure:: images/defaultpolicy.png
+	:scale: 75%
+	:alt: Default Policy
+	:align: center
+
+	*figure 12: Default Policy*
  
+To apply an override, click on the required option in the override section of the default policy. A drop down list is opened, displaying the possible values for the policy. Select the desired value and the override value is set. 
+Once an override value has been set, the entire column is marked in red, to visually highlight that an override value has been set.
+
+.. figure:: images/overridedefaultpolicy.png
+	:scale: 75%
+	:alt: Override Default Policy
+	:align: center
+
+	*figure 13: Override Default Policy*
+
+Override values take precedence over existing policies values and provides an efficient way to apply changes quickly thus improving overall protection in times where certain threats may be high. 
+
+To remove an override value and return the system to the previous settings, simply click the existing value, select the empty entry in the dropdown list. 
+
+.. figure:: images/removeoverride.png
+	:scale: 75%
+	:alt: Remove Override Default Policy
+	:align: center
+
+	*figure 14: Remove Override*
 
 
+The override value is removed, and the previously set values are retrieved and displayed in the table.
+
+Add New URLs
+============
+
+To Add URLs to the Policies table, press the ``Add New URL`` icon. 
+
+.. figure:: images/addnewicon.png
+	:scale: 25%
+	:alt: Add New URL
+	:align: right
+
+
+This function opens the following dialog:
+
+.. figure:: images/addnewpolicy.png
+	:scale: 75%
+	:alt: Add New Policy
+	:align: center
+
+	*figure 15: Add New Policy Dialog*
+
+The dialog opens with the current system default options applied. 
+Add the URLs in the ``URL Addresses`` field. Multiple addresses can be added, separated with a new line.
+Define the required option(s) for this policy using the drop-down list of values. Once complete, click the “Add” button.
+
+Validation checks are performed on the URL that you entered, as follows:
+*	Verify that the URL is valid – if not, a message is displayed and the dialog remains opened, allowing the Administrator to modify the URL.
+*	Verify that the URL is not a duplicate.  In such a case, a message is displayed to say the URL already exists. The dialog remains open, allowing the user to modify the URL.  This is to prevent the same URL having different options applied in multiple policies. 
+
+If a URL is marked as ``White`` listed in the Access policy, a notification is issued to the Administrator, confirming that only the specific URL is allowed, and any redirects from this site, will NOT be allowed unless they are also configured as ``white`` listed URL’s. 
+
+Once the validation checks are successfully completed, the dialog closes and the new URLs are displayed in the table.
+
+Modify an Existing URL
+======================
+It’s possible to modify an existing URL from its entry in the table. All columns can be modified, including the address itself and all policies. To modify a certain entry in the table, simply click the column to update and the entire row become editable.
+
+The URL column is a free text field. Click it and modify the address.
+
+To modify a policy - select the desired value from the drop-down list.
+
+Once done modifying the specific row – click a different place on the screen and the updated values are validated (same checks are performed as when adding a new URL) and committed. 
+
+Settings
+========
+
+>>>> WILL CHANGE, THEREFORE WILL ADD LATER <<<<
+
+
+Translations
+============
+
+The system comes with English (US) as the default language.  It’s possible to add a new language or to edit the existing language file if you wish to change a message that is displayed to the user for a particular event.
+
+.. figure:: images/Launguagetranslations.png
+	:scale: 75%
+	:alt: Launguage Translations
+	:align: center
+
+	*figure 16: Launguage Translations*
+	
+
+Add a new Language
+==================
+Click the Add new language option on the top left of the toolbar.
+Enter a name for the required language and the language locale and click save.
+
+.. figure:: images/addnewlanguage.png
+	:scale: 75%
+	:alt: Add New Launguage
+	:align: center
+
+	*figure 17: Add New Launguage*
+	
+Select the new Language form the Language drop down list on the toolbar.  Once selected, you can now make any changes to the labels and system messages to your chosen language.  Click “save” once all the changes have been made.
+
+Your new Language will now appear in the list of available Languages.
+
+You can use the same method to adjust any of the system messages, for example you may decide to change… 
+
+``AdminLoginError.MissingUserPrincipalName: Account does not have an explicit user principal name``
+
+To the following:
+
+``AdminLoginError.MissingUserPrincipalName: You Account does not have an explicit user principal name, please contact the helpdesk on ext 455.``
+
+Licensing
+=========
+
+To activate shield or apply a license extension, first login to the Admin console, select the ``Navigation`` option from the menu.
+
+Send the contents of System ID field to Ericom requesting your extension or activation.   On receipt of your activation key, paste the key into the Activation Key field and click ``Activate`` at the bottom.
+
+The Number of Licenses and License Expiration Date should now present the updated license information.   No service restart is required.
+
+	
 
 
 

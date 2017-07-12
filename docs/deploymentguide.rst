@@ -247,7 +247,7 @@ In order for Shield to handle HTTPS URLs, the following certificates need to be 
  Save the following certificates locally: 
 
 	:download:`ca.cert.crt <downloads/ca.cert.crt>`.
-	:download:intermediate.crt <downloads/intermediate.crt>.
+	:download:`intermediate.crt <downloads/intermediate.crt>`.
   
  
 **Deploy certificates using Group Policy:**

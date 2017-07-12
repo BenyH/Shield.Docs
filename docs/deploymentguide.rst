@@ -157,7 +157,7 @@ Installation Script
 Prerequisites
 =============
 
-Ubuntu 16.04 - to install, follow the instructions `here` <https://www.ubuntu.com/download/desktop/install-ubuntu-desktop>`_
+Ubuntu 16.04 - to install, follow the instructions `here <https://www.ubuntu.com/download/desktop/install-ubuntu-desktop>`_
 
 Deployment
 ==========
@@ -302,7 +302,7 @@ Run Firefox, go to **Tools | Options | Advanced | Certificates | View Certificat
 
 **Mac OSX Configuration:**
 
-For instructions on how to import certificates in Mac OS, click `here <https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/>_
+For instructions on how to import certificates in Mac OS, click `here <https://www.sslsupportdesk.com/ssl-installation-instructions-for-apple-mac-os-x-10-11/>`_
 
 You may have different screens if your Mac is running a different OSX version than the one shown, in such case check with your documentation on the correct method for installing certificates.
 
@@ -456,9 +456,9 @@ The following options can be controlled within a Policy, either at the system de
 
 .. note:: A specified URL will take priority over the system default policy, except in cases where the override values have been used, see next section for more details on overriding a policy.
 
-**Sub-domain** – define whether the URL’s sub-domains are included or not::
-	Example: URL is defined as west.examle.com
-If this option is enabled, the user would also have access to east.example.com without having to explicitly add this to the URL section.
+**Sub-domain** – define whether the URL’s sub-domains are included or not
+
+.. note:: Example: URL is defined as west.examle.com. If this option is enabled, the user would also have access to east.example.com without having to explicitly add this to the URL section.
 
 
 * **Download** – define if a file may be downloaded from the specified URL
@@ -474,9 +474,9 @@ As blocking all cookies may cause issues with some sites needed by the organizat
 * **Files** – define whether downloaded files are sanitized or not
 * **Access** – define whether the URL is:
 
-1.	Shield - opened via Ericom Shield
-2.	White - opened without going through the Ericom Shield system
-3.	Black - cannot be opened at all.
+	1.	Shield - opened via Ericom Shield
+	2.	White - opened without going through the Ericom Shield system
+	3.	Black - cannot be opened at all.
 
 	
 	

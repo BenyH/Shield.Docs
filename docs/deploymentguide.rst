@@ -109,9 +109,10 @@ Prerequisites
 
 VirtualBox on Windows/Linux:
 
-Linux: open a terminal and run:: 
+Linux: open a terminal and run:
+ 
 
-	$ apt install virtualbox 
+.. code-block::	$ apt install virtualbox 
 
 
 For Windows, download from... https://www.virtualbox.org/wiki/Downloads
@@ -125,23 +126,22 @@ Prerequisites
 
 The first step is to install Vagrant and VirtualBox on Ubuntu, as detailed above, please ensure that your Ubuntu server is 16.04 or above.
 
-To install, open a terminal window or SSH to the Linux machine and run::
+To install, open a terminal window or SSH to the Linux machine and run:
 
-	$ apt install vagrant
-
-	$ apt install virtualbox
+.. code-block::	$ apt install vagrant
+				$ apt install virtualbox
 
 
 Deployment
 ----------
 
-Create a folder with the name: ``Vagrant``. Change to this folder by typing ``cd Vagrant`` and then run the following commands.::
+Create a folder with the name: ``Vagrant``. Change to this folder by typing ``cd Vagrant`` and then run the following commands:
 
-	$ “wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/Vagrantfile”
+.. code-block::	$ “wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/Vagrantfile”
 
-	$ chmod +x Vagrantfile
+				$ chmod +x Vagrantfile
 
-	$ vagrant up
+				$ vagrant up
 	
 
 	
@@ -167,13 +167,13 @@ Deployment
 
 Open a terminal window or connect to the Linux machine using SSH, create a new temporary folder and go to this folder.
 
-Run the following commands.::
+Run the following commands:
 
-	$ wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/ericomshield-setup.sh
+.. code-block::	$ wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/ericomshield-setup.sh
 
-	$ sudo chmod +x ericomshield-setup.sh
+				$ sudo chmod +x ericomshield-setup.sh
 
-	$ sudo ./ericomshield-setup.sh
+				$ sudo ./ericomshield-setup.sh
 
 The script may take several minutes to complete. At the end of the script you should see that the deployment is successful.
 
@@ -599,11 +599,11 @@ Select the new Language form the Language drop down list on the toolbar.  Once s
 
 Your new Language will now appear in the list of available Languages.
 
-You can use the same method to adjust any of the system messages, for example you may decide to change...::
+You can use the same method to adjust any of the system messages, for example you may decide to change...:
 
 	AdminLoginError.MissingUserPrincipalName: Account does not have an explicit user principal name
 
-To the following...::
+To the following...:
 
 	AdminLoginError.MissingUserPrincipalName: You Account does not have an explicit user principal name, please contact the helpdesk on ext 455.
 

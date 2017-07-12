@@ -595,11 +595,11 @@ Select the new Language form the Language drop down list on the toolbar.  Once s
 
 Your new Language will now appear in the list of available Languages.
 
-You can use the same method to adjust any of the system messages, for example you may decide to change...::
+You can use the same method to adjust any of the system messages, for example you may decide to change::
 
 	AdminLoginError.MissingUserPrincipalName: Account does not have an explicit user principal name
 
-To the following...::
+To the following::
 
 	AdminLoginError.MissingUserPrincipalName: You Account does not have an explicit user principal name, please contact the helpdesk on ext 455.
 

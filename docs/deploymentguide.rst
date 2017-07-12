@@ -559,14 +559,15 @@ To modify a policy - select the desired value from the drop-down list.
 
 Once done modifying the specific row – click a different place on the screen and the updated values are validated (same checks are performed as when adding a new URL) and committed. 
 
+********
 Settings
-========
+********
 
 >>>> WILL CHANGE, THEREFORE WILL ADD LATER <<<<
 
-
+************
 Translations
-============
+************
 
 The system comes with English (US) as the default language.  It’s possible to add a new language or to edit the existing language file if you wish to change a message that is displayed to the user for a particular event.
 
@@ -602,8 +603,9 @@ To the following:
 
 ``AdminLoginError.MissingUserPrincipalName: You Account does not have an explicit user principal name, please contact the helpdesk on ext 455.``
 
+*********
 Licensing
-=========
+*********
 
 To activate shield or apply a license extension, first login to the Admin console, select the ``Navigation`` option from the menu.
 

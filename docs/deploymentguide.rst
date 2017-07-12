@@ -111,9 +111,8 @@ VirtualBox on Windows/Linux:
 
 Linux: open a terminal and run:
  
-
-.. code-block::	$ apt install virtualbox 
-
+.. code-block::	bash
+  $ apt install virtualbox 
 
 For Windows, download from... https://www.virtualbox.org/wiki/Downloads
 

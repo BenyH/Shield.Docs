@@ -133,7 +133,7 @@ To install, open a terminal window or SSH to the Linux machine and run::
 Deployment
 ----------
 
-Create a folder with the name: ``Vagrant``. Change to this folder by typing ``cd Vagrant`` and then run the following commands:
+Create a folder with the name: ``Vagrant``. Change to this folder by typing ``cd Vagrant`` and then run the following commands::
 
 	$ “wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/Vagrantfile”
 	$ chmod +x Vagrantfile
@@ -163,7 +163,7 @@ Deployment
 
 Open a terminal window or connect to the Linux machine using SSH, create a new temporary folder and go to this folder.
 
-Run the following commands:
+Run the following commands::
 
 	$ wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/ericomshield-setup.sh
 	$ sudo chmod +x ericomshield-setup.sh
@@ -312,7 +312,7 @@ Ericom Shield includes a third-party scanning engine as part of the Internet Con
 
 CDR stands for “Content Disarm and Reconstruct”, this engine is designed to deconstruct the file and remove any content that can cause potential harm (both known and unknown threats).  Once the file sanitization is complete, the sanitized file is sent to the user.
 
-	.. note:: Any scanning engine available today cannot provide 100% protection from malware.  In essence the scanning engine reduces the risk, and therefore any protection policy should include a combination or black and white listed sites and CDR to obtain a higher level of overall protection.
+.. note:: Any scanning engine available today cannot provide 100% protection from malware.  In essence the scanning engine reduces the risk, and therefore any protection policy should include a combination or black and white listed sites and CDR to obtain a higher level of overall protection.
 
 
 *****************************************
@@ -342,6 +342,7 @@ The web interface is optimized for 1440 pixel horizontal resolution.
 **Default credentials:**
 
 	**Username:** admin
+	
 	**Password:** ericomshield
 
 
@@ -593,11 +594,11 @@ Select the new Language form the Language drop down list on the toolbar.  Once s
 
 Your new Language will now appear in the list of available Languages.
 
-You can use the same method to adjust any of the system messages, for example you may decide to change...:
+You can use the same method to adjust any of the system messages, for example you may decide to change...::
 
 	AdminLoginError.MissingUserPrincipalName: Account does not have an explicit user principal name
 
-To the following...:
+To the following...::
 
 	AdminLoginError.MissingUserPrincipalName: You Account does not have an explicit user principal name, please contact the helpdesk on ext 455.
 

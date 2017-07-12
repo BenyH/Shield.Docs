@@ -352,7 +352,7 @@ Select the UI Language
 To change the user interface language of the Admin console, click on the context menu at the upper right corner to open the settings screen:
 
 .. figure:: images/settings.png
-	:scale: 75%
+	:scale: 50%
 	:alt: Settings
 	:align: center
 
@@ -361,7 +361,7 @@ To change the user interface language of the Admin console, click on the context
 Select the Language option
 
 .. figure:: images/language.png
-	:scale: 75%
+	:scale: 50%
 	:alt: Language
 	:align: center
 
@@ -410,7 +410,7 @@ Hovering the mouse over an icon in the main panel will display a tooltip message
 
 
 *********
-Dashboord
+Dashboard
 *********
 
 TBD
@@ -421,7 +421,7 @@ Policies
 
 In this section, policies can be defined system wide or for an individual URL.  
 
-The available actions are: ``Add New URL``, ``Delete” and ``Toggle View``.
+The available actions are: ``Add New URL``, ``Delete`` and ``Toggle View``.
 
  
 .. figure:: images/mainscreentoolbar.png
@@ -445,7 +445,7 @@ Default Policy
 	*figure 11: Default Policy*
 	
 	
-The System Default policy is displayed in the dedicated row (in green) in the upper section of the Policies table.  You may need to use the “Toggle View” option in order to see it.
+The System Default policy is displayed in the dedicated row (in green) in the upper section of the Policies table.  You may need to use the `Toggle View` option in order to see it.
 
 To update an option within the default policy, click the dropdown list for the required option and set the required default value. 
 
@@ -454,23 +454,25 @@ Configuring a Policy
 ====================
 The following options can be controlled within a Policy, either at the system default level or for specific URLs defined within the Policy engine.
 
-..note:: A specified URL will take priority over the system default policy, except in cases where the override values have been used, see next section for more details on overriding a policy.
+.. note:: A specified URL will take priority over the system default policy, except in cases where the override values have been used, see next section for more details on overriding a policy.
 
 **Sub-domain** – define whether the URL’s sub-domains are included or not::
 	Example: URL is defined as west.examle.com
 If this option is enabled, the user would also have access to east.example.com without having to explicitly add this to the URL section.
 
 
-**Download** – define if a file may be downloaded from the specified URL
-**Upload** - define if a file may be uploaded to the specific URL
-**Clipboard** – enable or disable the clipboard usage  
-**Cookies** – enable or disable the usage of cookies (bi-directionally)
-..note:: It’s important to note that globally blocking cookies will prevent most sites that use some form of authentication unusable.  This is because those sites will store an authentication cookie on your machine (usually encrypted).   
+* **Download** – define if a file may be downloaded from the specified URL
+* **Upload** - define if a file may be uploaded to the specific URL
+* **Clipboard** – enable or disable the clipboard usage  
+* **Cookies** – enable or disable the usage of cookies (bi-directionally)
+
+.. note:: It’s important to note that globally blocking cookies will prevent most sites that use some form of authentication unusable.  This is because those sites will store an authentication cookie on your machine (usually encrypted).   
 In essence the main reason to block cookies is to prevent tracking cookies, this type of third party cookie allows other sites and so advertisers to read them, throwing up those annoying adds related to something you searched for last week.
 As blocking all cookies may cause issues with some sites needed by the organization, a policy of black and white lists can provide the best of both worlds.
 
-**Files** – define whether downloaded files are sanitized or not
-**Access** – define whether the URL is:
+
+* **Files** – define whether downloaded files are sanitized or not
+* **Access** – define whether the URL is:
 
 1.	Shield - opened via Ericom Shield
 2.	White - opened without going through the Ericom Shield system

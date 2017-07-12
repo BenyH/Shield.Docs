@@ -570,12 +570,12 @@ Translations
 
 The system comes with English (US) as the default language.  It’s possible to add a new language or to edit the existing language file if you wish to change a message that is displayed to the user for a particular event.
 
-.. figure:: images/Launguagetranslations.png
+.. figure:: images/languagetranslations.png
 	:scale: 75%
-	:alt: Launguage Translations
+	:alt: Language Translations
 	:align: center
 
-	*figure 16: Launguage Translations*
+	*figure 16: Language Translations*
 	
 
 Add a new Language
@@ -585,10 +585,10 @@ Enter a name for the required language and the language locale and click save.
 
 .. figure:: images/addnewlanguage.png
 	:scale: 75%
-	:alt: Add New Launguage
+	:alt: Add New Language
 	:align: center
 
-	*figure 17: Add New Launguage*
+	*figure 17: Add New Language*
 	
 Select the new Language form the Language drop down list on the toolbar.  Once selected, you can now make any changes to the labels and system messages to your chosen language.  Click “save” once all the changes have been made.
 

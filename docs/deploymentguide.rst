@@ -111,7 +111,10 @@ VirtualBox on Windows/Linux:
 
 Linux: open a terminal and run:: 
 
-$ apt install virtualbox · Windows: https://www.virtualbox.org/wiki/Downloads
+	$ apt install virtualbox 
+
+
+For Windows, download from... https://www.virtualbox.org/wiki/Downloads
 
 
 Vagrant File
@@ -172,7 +175,7 @@ Run the following commands.::
 
 	$ sudo ./ericomshield-setup.sh
 
-The script may take some time to complete (approx. xx mins). At the end of the script you should see that the deployment is successful.
+The script may take several minutes to complete. At the end of the script you should see that the deployment is successful.
 
 Ericom Shield is installed in ``/usr/local/ericomshield``.
 
@@ -194,7 +197,7 @@ Alternatively, the browser will be configured to use the Ericom Shield build-in 
 
 Integrate with existing proxy
 
-In this cases where the organization already has a proxy server. The existing Proxy server should be configured to connect to the Ericom Shield ICAP server. The ICAP Server is running on the Ericom Shield Server and is listening on port 1433. Configure the exiting server to connect to the Ericom Shield ICAP server on port 1443 using the IP address noted in section 2.2
+In this cases where the organization already has a proxy server. The existing Proxy server should be configured to connect to the Ericom Shield ICAP server. The ICAP Server is running on the Ericom Shield Server and is listening on port 1433. Configure the exiting server to connect to the Ericom Shield ICAP server on port 1443 using the IP address noted above.
 
 There may also be a need to import the certificates detailed below into the existing proxy server to allow support for https navigation.
 
@@ -312,8 +315,10 @@ OPSWAT Integration
 ****************** 
 
 Ericom Shield includes a third-party scanning engine as part of the Internet Content Adaptation Protocol (ICAP) Server.  This scanning engine integrated into the ICAP Server using CDR which helps secure your web traffic and extend the protection of your organisation against advanced threats by scanning and sanitizing any files that pass through it. 
+
 CDR stands for “Content Disarm and Reconstruct”, this engine is designed to deconstruct the file and remove any content that can cause potential harm (both known and unknown threats).  Once the file sanitization is complete, the sanitized file is sent to the user.
-It should be noted that any scanning engine available today cannot provide 100% protection from malware.  In essence the scanning engine reduces the risk, and therefore any protection policy should include a combination or black and white listed sites and CDR to obtain a higher level of overall protection.
+
+	.. note:: Any scanning engine available today cannot provide 100% protection from malware.  In essence the scanning engine reduces the risk, and therefore any protection policy should include a combination or black and white listed sites and CDR to obtain a higher level of overall protection.
 
 
 *****************************************
@@ -342,8 +347,8 @@ The web interface is optimized for 1440 pixel horizontal resolution.
 
 **Default credentials:**
 
-**Username:** admin
-**Password:** ericomshield
+	**Username:** admin
+	**Password:** ericomshield
 
 
 Select the UI Language
@@ -358,7 +363,7 @@ To change the user interface language of the Admin console, click on the context
 
 	*figure 6: Settings*
 	
-Select the Language option
+Select the Language
 
 .. figure:: images/language.png
 	:scale: 50%
@@ -413,7 +418,7 @@ Hovering the mouse over an icon in the main panel will display a tooltip message
 Dashboard
 *********
 
-TBD
+>>>>>>>>>>>> TBD... will add later <<<<<<<<<
 
 ********
 Policies
@@ -445,7 +450,7 @@ Default Policy
 	*figure 11: Default Policy*
 	
 	
-The System Default policy is displayed in the dedicated row (in green) in the upper section of the Policies table.  You may need to use the `Toggle View` option in order to see it.
+The System Default policy is displayed in the dedicated row (in green) in the upper section of the Policies table.  You may need to use the ``Toggle View`` option in order to see it.
 
 To update an option within the default policy, click the dropdown list for the required option and set the required default value. 
 
@@ -520,13 +525,12 @@ The override value is removed, and the previously set values are retrieved and d
 Add New URLs
 ============
 
-To Add URLs to the Policies table, press the ``Add New URL`` icon. 
-
 .. figure:: images/addnewicon.png
-	:scale: 25%
+	:scale: 100%
 	:alt: Add New URL
 	:align: right
-
+	
+To Add URLs to the Policies table, press the ``Add New URL`` icon. 
 
 This function opens the following dialog:
 
@@ -595,13 +599,13 @@ Select the new Language form the Language drop down list on the toolbar.  Once s
 
 Your new Language will now appear in the list of available Languages.
 
-You can use the same method to adjust any of the system messages, for example you may decide to change… 
+You can use the same method to adjust any of the system messages, for example you may decide to change...::
 
-``AdminLoginError.MissingUserPrincipalName: Account does not have an explicit user principal name``
+	AdminLoginError.MissingUserPrincipalName: Account does not have an explicit user principal name
 
-To the following:
+To the following...::
 
-``AdminLoginError.MissingUserPrincipalName: You Account does not have an explicit user principal name, please contact the helpdesk on ext 455.``
+	AdminLoginError.MissingUserPrincipalName: You Account does not have an explicit user principal name, please contact the helpdesk on ext 455.
 
 *********
 Licensing

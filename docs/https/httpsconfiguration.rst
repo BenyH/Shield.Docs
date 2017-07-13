@@ -7,8 +7,7 @@ Once you have configured your browser to use the Ericom Proxy, opne the browser 
 
 http://install-certificate/ - and download the certificate.
 
-Installing the Certificate
---------------------------
+**Installing the Certificate**
 
 .. toctree::
 	:maxdepth: 1

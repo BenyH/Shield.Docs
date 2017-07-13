@@ -55,6 +55,6 @@ http://install-certificate/ - and download the certificate.
 	:maxdepth: 1
 	:glob:
 	
-	browsers/*
+	../browsers/*
 
 	

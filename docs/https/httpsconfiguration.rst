@@ -11,7 +11,7 @@ Installing the Certificate
 --------------------------
 
 .. toctree::
-	:maxdepth: 2
+	:maxdepth: 1
 	:glob:
 	
 	browsers/*

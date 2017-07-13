@@ -2,6 +2,6 @@ Index
 =====
 
 .. toctree::
-
+	:hidden
 
    genindex

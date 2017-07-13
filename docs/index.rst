@@ -8,9 +8,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   genindex
-   evaluationguide.rst
-   deploymentguide.rst
+   evaluationguide
+   deploymentguide
 
 
 

@@ -87,9 +87,9 @@ Importing the Appliance:
 
 	*Figure 3: Shield startup screen*	
 	
-*	Type the following to restart the Ericom Shield Service.  During the restart, Ericom Shield will automatically update itself to the latest version if one is available. ::
+*	Type the following to restart the Ericom Shield Service.  During the restart, Ericom Shield will automatically update itself to the latest version if one is available.::
 
-	sudo service ericomshield restart
+	$ sudo service ericomshield restart
 
 	Wait until the system is restarted. Once finished, Ericom Shield is ready to handle connections.
 
@@ -142,7 +142,13 @@ The required syntax is sudo service ericomshield <command> for example::
 	*Figure 3: Shield Status*	
 	
 
+	
+	
+********************
+`HTTPS Configuration <httpsconfiguration/httpsconfiguration.rst>`_
+********************
 
+ 
 
 	
 	

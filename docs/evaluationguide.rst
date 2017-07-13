@@ -13,6 +13,10 @@ Evaluation Guide
 	evaluationguide/requirements
 	evaluationguide/installation
 	evaluationguide/postinstallationsteps
+	evaluationguide/systemdefaultpolicies
+	evaluationguide/evaluationlicense
+	shared/aboutericom
+	shared/legalnotice
 
 
 

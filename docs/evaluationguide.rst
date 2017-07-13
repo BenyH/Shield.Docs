@@ -141,11 +141,9 @@ The required syntax is sudo service ericomshield <command> for example::
 	:align: center
 	*Figure 3: Shield Status*	
 	
-
-	
 	
 ********************
-`HTTPS Configuration <httpsconfiguration/httpsconfiguration.rst>`_
+	:doc:`HTTPS Configuration <httpsconfiguration/httpsconfiguration.html>`
 ********************
 
  

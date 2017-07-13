@@ -125,6 +125,7 @@ Using the EricomShield Service
 The *ericomshield* service provides the ability to easily perform certain actions on the Ericom Shield system, using a terminal window directly on the host or connected via SSH.
 
 The following actions are available using the service:
+
 *	**start**: starts the service
 *	**stop**: stops the service
 *	**status**: shows the status of the service
@@ -143,9 +144,15 @@ The required syntax is sudo service ericomshield <command> for example::
 	
 	
 ********************
-	:doc:`HTTPS Configuration <httpsconfiguration/httpsconfiguration.rst>`
+	:doc:`HTTPS Configuration </httpsconfiguration>`
+
 ********************
 
+:ref:`Link title <HTTPS Configuration>`.
+
+`HTTPS Configuration <httpsconfiguration/httpsconfiguration.html>`_
+
+ 
 
 
 	

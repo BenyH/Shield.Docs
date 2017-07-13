@@ -6,7 +6,7 @@ In order for Shield to handle HTTPS URLs, the following certificate needs to be 
 Go to: http://install-certificate/ - and download the certificate.
 
 .. toctree::
-	:maxdepth: 1
+	:maxdepth: 2
 	:glob:
 	
-	ie
+	browsers/*

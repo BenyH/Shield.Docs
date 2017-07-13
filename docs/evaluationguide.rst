@@ -143,7 +143,7 @@ The required syntax is sudo service ericomshield <command> for example::
 	*Figure 3: Shield Status*	
 	
 .. toctree::
-	:maxdepth: 1
+	:maxdepth: 2
 	:glob:
 	
 	https/*

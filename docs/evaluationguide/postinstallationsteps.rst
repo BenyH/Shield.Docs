@@ -34,10 +34,12 @@ The required syntax is sudo service ericomshield <command> for example::
 
 	$ sudo service ericomshield status
 
+	
 .. figure:: images/shieldstatus.png
 	:scale: 75%
 	:alt: Shield Status
 	:align: center
+	
 	*Figure 3: Shield Status*	
 
 HTTPS Configuration

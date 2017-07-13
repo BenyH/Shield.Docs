@@ -34,7 +34,7 @@ The required syntax is sudo service ericomshield <command> for example::
 
 	$ sudo service ericomshield status
 
-.. figure:: ../../images/shieldstatus.png
+.. figure:: images/shieldstatus.png
 	:scale: 75%
 	:alt: Shield Status
 	:align: center

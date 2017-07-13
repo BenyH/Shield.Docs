@@ -2,7 +2,7 @@
 Ericom Shield Architecture
 **************************
 
-.. figure:: ../images/architecture_f1.png	
+.. figure:: images/architecture_f1.png	
 	:scale: 75%
 	:alt: Ericom Shield Architecture 
 	:align: center

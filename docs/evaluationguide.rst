@@ -143,10 +143,10 @@ The required syntax is sudo service ericomshield <command> for example::
 	
 	
 ********************
-	:doc:`HTTPS Configuration <httpsconfiguration/httpsconfiguration.html>`
+	:doc:`HTTPS Configuration <httpsconfiguration/httpsconfiguration.rst>`
 ********************
 
- 
+
 
 	
 	

@@ -13,7 +13,7 @@ Importing the Appliance:
 *	When the image has been imported, select the image and click on settings
 *	Change the Network setting to ``Bridged Adapter``
 
-.. figure:: images/networksettings.png	
+.. figure:: ../../images/networksettings.png	
 	:scale: 75%
 	:alt: Network Settings 
 	:align: center
@@ -26,7 +26,7 @@ Importing the Appliance:
 *	Login using the credentials: ``vagrant/vagrant``
 *	You will see the IP Address of your VM, as shown below:  (take a note of this IP address as you will use it later)
 	
-.. figure:: images/shieldstartupscreen.png
+.. figure:: ../../images/shieldstartupscreen.png
 	:scale: 75%
 	:alt: Shield Startup Screen 
 	:align: center

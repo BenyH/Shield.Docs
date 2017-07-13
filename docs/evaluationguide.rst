@@ -8,71 +8,18 @@ Evaluation Guide
 	:maxdepth: 2
 	:glob:
 	
-	evaluationguide/whatisericomshield
-	evaluationguide/shieldarchitecture
-
+	shared/whatisericomshield
+	shared/shieldarchitecture
+	evaluationguide/requirements
+	evaluationguide/installation
 
 
 
 
 	
-************
-Requirements
-************
 
 
-Ericom Shield is supplied as a Virtual Appliance in Open Virtualization Format (OVF). The minimum requirements for the appliance are: 3GB RAM, 3 processors and 40GB of disk space.
 
-The appliance can be run on any virtualization platform that supports deployment via OVF. The documentation below will provide details of deployment using Oracle Virtual Box. Oracle Virtual Box can be downloaded from `here <http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html>`_
-
-For evaluation purposes, the appliance is limited to a maximum of 20 browser sessions, i.e. 1 user having 20 tabs open or 20 users with a single tab each.
-
-************	
-Installation
-************
-
-Download the Ericom Shield appliance from `Google Drive <https://drive.google.com/open?id=0B_wcQRaAT_INcXhsc1E4bXlySWs>`_
-
-Importing the Appliance:
-========================
-
-*	Open Oracle VirtualBox
-*	From the menu, choose ``File Import | Appliance…``
-*	select the downloaded file ``shield_eval.ova``
-*	When the image has been imported, select the image and click on settings
-*	Change the Network setting to ``Bridged Adapter``
-
-.. figure:: images/networksettings.png	
-	:scale: 75%
-	:alt: Network Settings 
-	:align: center
-
-	*Figure 2: Network Settings*
-	
-	
-*	Click ``OK`` to save your settings
-*	Start the machine
-*	Login using the credentials: ``vagrant/vagrant``
-*	You will see the IP Address of your VM, as shown below:  (take a note of this IP address as you will use it later)
-	
-.. figure:: images/shieldstartupscreen.png
-	:scale: 75%
-	:alt: Shield Startup Screen 
-	:align: center
-
-	*Figure 3: Shield startup screen*	
-	
-*	Type the following to restart the Ericom Shield Service.  During the restart, Ericom Shield will automatically update itself to the latest version if one is available.::
-
-	$ sudo service ericomshield restart
-
-	Wait until the system is restarted. Once finished, Ericom Shield is ready to handle connections.
-
-*	The ericomshield service is located in ``/usr/local/ericomshield``
-
-If you need to recall the IP address of the appliance at a later date, you can also type::  
-
-	$ sudo ifconfig eth0
 	
 	
 ***********************	

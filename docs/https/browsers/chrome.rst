@@ -1,8 +1,18 @@
-Internet Explorer
-=================
+Chrome
+======
 
 Once you click the ``Download Certificate`` link, the following prompt is displayed:
 
+.. figure:: images/Chromedownloadcomfirmation.png
+	:scale: 75%
+	:alt: Downloads Confirmation
+	:align: center
+	
+	*Certificate Downloads Confirmation*
+	
+Click the “Keep” option, and the file ericomshield.crt is saved in the Downloads folder.
+
+Go to the Downloads folder and open the .crt file. The following dialog is opened:
 
 .. figure:: images/downloadcert.png
 	:scale: 75%
@@ -78,6 +88,5 @@ An acknowledge message is displayed:
 	
 Click ``OK``	
 
-Now the certificate is successfully installed in IE browser and you can browse HTTPS websites.
+Now the certificate is successfully installed in IE browser and you can browse HTTPS websites.	
 
-	

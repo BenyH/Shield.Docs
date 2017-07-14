@@ -11,7 +11,7 @@ Deployment Guide
 	deploymentguide/keyfeatures
 	deploymentguide/requirements
 	deploymentguide/installers
-	deploymentguide/rstpostinstallationsteps
+	deploymentguide/postinstallationsteps
 	deploymentguide/opswat
 	deploymentguide/clustering
 	deploymentguide/admin

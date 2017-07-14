@@ -2,7 +2,6 @@
 Evaluation Guide
 ################
 
->>> IN WORK <<<
 
 .. toctree::
 	:maxdepth: 2

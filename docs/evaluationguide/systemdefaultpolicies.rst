@@ -12,4 +12,4 @@ All websites are accessible but are protected by Shield, the following options a
 * **Cookies** – Disabled
 * **Files** – Clean
 
-For details on how to change the above options or create your own policies, see the `Ericom Shield Deployment Guide <../deploymentguide/postinstallationsteps.html>`_.
+For details on how to change the above options or create your own policies, see the `Ericom Shield Deployment Guide <../deploymentguide/policies.html>`_.

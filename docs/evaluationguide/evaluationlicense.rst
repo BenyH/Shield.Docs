@@ -9,7 +9,7 @@ For information on extending or activating your license, please see the relavent
 	:maxdepth: 1
 	:glob:
 	
-	deploymentguide/admin
-	deploymentguide/licensing
+	../deploymentguide/admin
+	../deploymentguide/licensing
 
 

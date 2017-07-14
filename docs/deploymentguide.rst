@@ -6,8 +6,8 @@ Deployment Guide
 	:maxdepth: 2
 	:glob:
 	
-	shared/whatisericomshield
-	shared/shieldarchitecture
+	deploymentguide/whatisericomshield
+	deploymentguide/shieldarchitecture
 	deploymentguide/keyfeatures
 	deploymentguide/requirements
 	deploymentguide/installers
@@ -21,8 +21,8 @@ Deployment Guide
 	deploymentguide/poolconfiguration
 	deploymentguide/translations
 	deploymentguide/licensing
-	shared/aboutericom
-	shared/legalnotice
+	deploymentguide/aboutericom
+	deploymentguide/legalnotice
 
 
 

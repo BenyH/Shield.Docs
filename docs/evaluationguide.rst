@@ -7,15 +7,15 @@ Evaluation Guide
 	:maxdepth: 2
 	:glob:
 	
-	shared/whatisericomshield
-	shared/shieldarchitecture
+	evaluationguide/whatisericomshield
+	evaluationguide/shieldarchitecture
 	evaluationguide/requirements
 	evaluationguide/installation
 	evaluationguide/postinstallationsteps
 	evaluationguide/systemdefaultpolicies
 	evaluationguide/evaluationlicense
-	shared/aboutericom
-	shared/legalnotice
+	evaluationguide/aboutericom
+	evaluationguide/legalnotice
 
 
 

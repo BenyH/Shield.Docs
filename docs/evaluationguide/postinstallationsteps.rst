@@ -6,7 +6,7 @@ Proxy Configuration
 ===================
 After installing Ericom Shield, the system is ready to use. In order to start browsing securely using Ericom Shield, the Browsing Traffic should be sent to the Ericom HTTP proxy.
 
-For information on how to integrate Ericom Shield with an existing proxy server, see the “Ericom Shield Deployment Guide”.
+For information on how to integrate Ericom Shield with an existing proxy server, see the `Ericom Shield Deployment Guide <../deploymentguide/postinstallationsteps.html>`_.
 
 Using the EricomShield Service
 ==============================
@@ -39,7 +39,7 @@ End User Configuration
 
 Select your browser of choice and define the Proxy Settings to use the Shield Client IP address (the VM IP address, see “Installation” section) and 3128 port. These settings can be changed manually as described in the links below, or via Group Policy.
 
-**Instructions for common browsers)**
+**Instructions for common browsers**
 
 Firefox: 
 http://www.wikihow.com/Enter-Proxy-Settings-in-Firefox

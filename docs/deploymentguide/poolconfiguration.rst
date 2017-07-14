@@ -30,9 +30,9 @@ This is the lower capacity threshhold, if the system is running lower that the s
 Standard Idle Timeout
 =====================
 
-Enter the standard timeout value in milliseconds.
+Enter the standard timeout value in minutes.
  
  
 Load Idle Timeout
 =================
-Enter the load idle timeout value in ms
+Enter the load idle timeout value in minutes.

@@ -10,7 +10,7 @@ Importing the Appliance:
 *	Open Oracle VirtualBox
 *	From the menu, choose ``File Import | Appliance…``
 *	select the downloaded file ``shield_eval.ova``
-*	When the image has been imported, select the image and click on settings
+*	When the image has been imported, select the image and click on ``settings``
 *	Change the Network setting to ``Bridged Adapter``
 
 .. figure:: images/networksettings.png	
@@ -33,7 +33,7 @@ Importing the Appliance:
 
 	*Figure 3: Shield startup screen*	
 	
-*	Type the following to restart the Ericom Shield Service.  During the restart, Ericom Shield will automatically update itself to the latest version if one is available.::
+*	Type the following to restart the Ericom Shield Service.  During the restart, Ericom Shield will automatically update itself to the latest version if one is available::
 
 	$ sudo service ericomshield restart
 

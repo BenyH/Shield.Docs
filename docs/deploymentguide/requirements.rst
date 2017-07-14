@@ -22,7 +22,7 @@ Minimum hardware specifications are 64GB memory, 8 core processors and 40GB disk
 Evaluation
 ==========
 
-The evaluation installation method uses an OVF Virtual Appliance image to allow for speedy deployment. This is described fully in the “Ericom Shield Evaluation Guide”.
+The evaluation installation method uses an OVF Virtual Appliance image to allow for speedy deployment. This is described fully in the `Ericom Shield Evaluation Guide <evaluationguide.html>`_.
 
 Production
 ==========

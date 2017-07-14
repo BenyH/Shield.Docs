@@ -124,7 +124,9 @@ Add the URLs in the ``URL Addresses`` field. Multiple addresses can be added, se
 Define the required option(s) for this policy using the drop-down list of values. Once complete, click the “Add” button.
 
 Validation checks are performed on the URL that you entered, as follows:
+
 *	Verify that the URL is valid – if not, a message is displayed and the dialog remains opened, allowing the Administrator to modify the URL.
+
 *	Verify that the URL is not a duplicate.  In such a case, a message is displayed to say the URL already exists. The dialog remains open, allowing the user to modify the URL.  This is to prevent the same URL having different options applied in multiple policies. 
 
 If a URL is marked as ``White`` listed in the Access policy, a notification is issued to the Administrator, confirming that only the specific URL is allowed, and any redirects from this site, will NOT be allowed unless they are also configured as ``white`` listed URL’s. 

@@ -49,7 +49,7 @@ Deployment
 
 Create a folder with the name: ``Vagrant``. Change to this folder by typing ``cd Vagrant`` and then run the following commands::
 
-	$ “wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/Vagrantfile”
+	$ wget https://raw.githubusercontent.com/ErezPasternak/Shield/master/Dev-Feb16/Vagrantfile
 	$ chmod +x Vagrantfile
 	$ vagrant up
 	

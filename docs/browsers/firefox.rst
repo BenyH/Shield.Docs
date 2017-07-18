@@ -90,7 +90,6 @@ Click ``OK``
 Next, open a browser and import the certificate into the browser itself: 
 In the browser, go to ``Tools | Options | Advanced | Certificates``:
 
-
 .. figure:: images/firefoxcertificates.png
 	:scale: 75%
 	:alt: Firefox Certificates

@@ -8,6 +8,34 @@ After installing Ericom Shield, the system is ready to use. In order to start br
 
 For information on how to integrate Ericom Shield with an existing proxy server, see the `Ericom Shield Deployment Guide <../deploymentguide/postinstallationsteps.html>`_.
 
+End User Configuration
+======================
+
+Select your browser of choice and define the Proxy Settings to use the Shield Client IP address (the VM IP address, mentioned `here <http://shielddocs.readthedocs.io/en/latest/evaluationguide/installation.html#installation>`_) and 3128 port. These settings can be changed manually as described in the following links, or via Group Policy.
+
+**Instructions for common browsers**
+
+`Firefox <http://www.wikihow.com/Enter-Proxy-Settings-in-Firefox>`_
+
+`Chrome and IE <https://customers.trustedproxies.com/knowledgebase.php?action=displayarticle&id=10>`_ (done via the Local internet Properties)
+	
+
+Configuring Certificates
+========================
+
+In order for Shield to handle HTTPS URLs, the following certificate needs to be imported into the client machine (Local Computer). This can be done via Group Policy or manually using the following steps:
+
+Once you have configured your browser to use the Ericom Proxy, open the browser and go to `install-certificate <http://install-certificate/>`_ and download the certificate.
+
+**Installing the Certificate**
+
+.. toctree::
+	:maxdepth: 1
+	:glob:
+	
+	../browsers/*
+
+	
 Using the EricomShield Service
 ==============================
 
@@ -33,32 +61,3 @@ The required syntax is systemctl <command> ericomshield for example::
 	
 	*Figure 3: Shield Status*	
 
-	
-End User Configuration
-======================
-
-Select your browser of choice and define the Proxy Settings to use the Shield Client IP address (the VM IP address, mentioned `here <http://shielddocs.readthedocs.io/en/latest/evaluationguide/installation.html#installation>`_) and 3128 port. These settings can be changed manually as described in the following links, or via Group Policy.
-
-**Instructions for common browsers**
-
-`Firefox <http://www.wikihow.com/Enter-Proxy-Settings-in-Firefox>`_
-
-`Chrome and IE <https://customers.trustedproxies.com/knowledgebase.php?action=displayarticle&id=10>`_ (done via the Local internet Properties)
-	
-
-Configuring Certificates
-========================
-
-In order for Shield to handle HTTPS URLs, the following certificate needs to be imported into the client machine (Local Computer). This can be done via Group Policy or manually using the following steps:
-
-Once you have configured your browser to use the Ericom Proxy, opne the browser and go to `here <http://install-certificate/>`_ and download the certificate.
-
-**Installing the Certificate**
-
-.. toctree::
-	:maxdepth: 1
-	:glob:
-	
-	../browsers/*
-
-	

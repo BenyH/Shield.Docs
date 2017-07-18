@@ -2,14 +2,14 @@
 Installation
 ************
 
-Download the Ericom Shield appliance from `Google Drive <https://drive.google.com/open?id=0B_wcQRaAT_INcXhsc1E4bXlySWs>`_
+Download the Ericom Shield appliance from `here <https://drive.google.com/open?id=0B_wcQRaAT_INcXhsc1E4bXlySWs>`_
 
 Importing the Appliance:
 ========================
 
 *	Open Oracle VirtualBox
 *	From the menu, choose ``File Import | Appliance…``
-*	select the downloaded file ``shield_eval.ova``
+*	Select the downloaded file ``shield_eval.ova``
 *	When the image has been imported, select the image and click on ``settings``
 *	Change the Network setting to ``Bridged Adapter``
 
@@ -39,7 +39,7 @@ Importing the Appliance:
 
 	Wait until the system is restarted. Once finished, Ericom Shield is ready to handle connections.
 
-*	The ericomshield service is located in ``/usr/local/ericomshield``
+*	The Ericom Shield Service is located in ``/usr/local/ericomshield``
 
 If you need to recall the IP address of the appliance at a later date, you can also type::  
 

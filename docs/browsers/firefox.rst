@@ -88,7 +88,7 @@ An acknowledge message is displayed:
 Click ``OK``	
 
 Next, open a browser and import the certificate into the browser itself: 
-In the browser, go to **Tools | Options | Advanced | Certificates**:
+In the browser, go to ``Tools | Options | Advanced | Certificates``:
 
 
 .. figure:: images/firefoxcertificates.png
@@ -121,9 +121,6 @@ In the displayed dialog, select the .crt file and click ``Open``:
 
 Check all three options to Trust the certificate and click ``OK``.
 
-Now the certificate is successfully installed and added as a trusted authority in Firefox browser and you can browse securely in HTTPS websites.
-	
-
-Now the certificate is successfully installed in IE browser and you can browse HTTPS websites.	
+Now the certificate is successfully installed and added as a trusted authority in Firefox browser and you can browse securely in HTTPS websites.	
 
 

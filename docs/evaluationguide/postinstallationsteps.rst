@@ -11,19 +11,19 @@ For information on how to integrate Ericom Shield with an existing proxy server,
 Using the EricomShield Service
 ==============================
 
-The *ericomshield* service provides the ability to easily perform certain actions on the Ericom Shield system, using a terminal window directly on the host or connected via SSH.
+The EricomShield service provides the ability to easily perform certain actions on the Ericom Shield system, using a terminal window directly on the host or connected via SSH.
 
 The following actions are available using the service:
 
 *	**start**: starts the service
 *	**stop**: stops the service
-*	**status**: shows the status of the service
-*	**version**: shows the service version
+*	**status**: shows the status of the system
+*	**version**: shows the system version
 *	**restart**: restarts the service
 
-The required syntax is sudo service ericomshield <command> for example::
+The required syntax is systemctl <command> ericomshield for example::
 
-	$ sudo service ericomshield status
+	$ systemctl status ericomshield
 
 	
 .. figure:: images/shieldstatus.png
@@ -41,11 +41,9 @@ Select your browser of choice and define the Proxy Settings to use the Shield Cl
 
 **Instructions for common browsers**
 
-Firefox: 
-http://www.wikihow.com/Enter-Proxy-Settings-in-Firefox
+`Firefox <http://www.wikihow.com/Enter-Proxy-Settings-in-Firefox>`_
 
-Chrome and IE (done via the Local internet Properties): 
-https://customers.trustedproxies.com/knowledgebase.php?action=displayarticle&id=10	
+`Chrome and IE <https://customers.trustedproxies.com/knowledgebase.php?action=displayarticle&id=10>`_ (done via the Local internet Properties)
 	
 
 Configuring Certificates

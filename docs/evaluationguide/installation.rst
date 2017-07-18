@@ -33,13 +33,13 @@ Importing the Appliance:
 
 	*Figure 3: Shield startup screen*	
 	
-*	Type the following to restart the Ericom Shield Service.  During the restart, Ericom Shield will automatically update itself to the latest version if one is available::
+*	Type the following to restart the EricomShield Service.  During the restart, Ericom Shield will automatically update itself to the latest version if one is available::
 
 	$ sudo service ericomshield restart
 
 	Wait until the system is restarted. Once finished, Ericom Shield is ready to handle connections.
 
-*	The Ericom Shield Service is located in ``/usr/local/ericomshield``
+*	The EricomShield Service is located in ``/usr/local/ericomshield``
 
 If you need to recall the IP address of the appliance at a later date, you can also type::  
 

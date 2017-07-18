@@ -37,7 +37,7 @@ The required syntax is systemctl <command> ericomshield for example::
 End User Configuration
 ======================
 
-Select your browser of choice and define the Proxy Settings to use the Shield Client IP address (the VM IP address, see “Installation” section) and 3128 port. These settings can be changed manually as described in the links below, or via Group Policy.
+Select your browser of choice and define the Proxy Settings to use the Shield Client IP address (the VM IP address, mentioned `here <http://shielddocs.readthedocs.io/en/latest/evaluationguide/installation.html#installation>`_) and 3128 port. These settings can be changed manually as described in the following links, or via Group Policy.
 
 **Instructions for common browsers**
 
